@@ -51,7 +51,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="LAr-vE-35F">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="11.20" textAlignment="natural" minimumFontSize="17" id="LAr-vE-35F">
                                 <rect key="frame" x="185" y="53" width="134" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -69,6 +69,9 @@
                                     <segment title="15%"/>
                                     <segment title="20%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="updateTipValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="yqF-aj-h2e"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xyx-dE-HQE">
                                 <rect key="frame" x="123" y="472" width="114" height="85"/>
@@ -83,9 +86,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="actualTipAmount" destination="yS5-Oi-6oe" id="Tae-ON-klj"/>
+                        <outlet property="actualTipAmount" destination="yS5-Oi-6oe" id="FgS-2H-6TU"/>
                         <outlet property="initalBillAmount" destination="LAr-vE-35F" id="AXM-6l-ajT"/>
-                        <outlet property="totalBillAmount" destination="1m7-4X-Pgt" id="TIQ-Mu-Gl8"/>
+                        <outlet property="tipIndex" destination="QGZ-pt-2yy" id="SgL-6r-xIr"/>
+                        <outlet property="totalBillAmount" destination="1m7-4X-Pgt" id="Bfl-J1-xmt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
